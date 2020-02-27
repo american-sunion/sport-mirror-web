@@ -22,6 +22,7 @@ export default class Home extends React.Component {
     }
 
     search = value => {
+        if (!value) return;
         this.setState({
             src: value
         }, () => {
